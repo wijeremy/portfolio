@@ -36,6 +36,7 @@ header div {
     border-width: .25em;
     border-style: solid;
     transition: opacity .5s;
+    z-index: 1;
 }
 
 .card:hover img {
@@ -44,14 +45,13 @@ header div {
 
 .card {
     background-color: #222222;
-    box-shadow: #aaaaaa .5rem .5rem .5rem;
     width: 200px;
     height: 197px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin: 2%;
+    margin: 5%;
+    z-index: 1;
 }
 
 .card h3 {
@@ -63,6 +63,7 @@ header div {
     text-align: center;
     position: absolute;
     padding: 2em;
+    z-index: 1;
 }
 
 .card:hover h3{
@@ -73,4 +74,31 @@ header div {
     width: 200px;
     height: 200px;
     z-index: 2;
+}
+
+#work-background {
+    width: 100%;
+    position: absolute;
+}
+
+#static {
+    width: 800px;
+    right: 20%;
+    position: absolute;
+    z-index: -1;
+}
+
+#work {
+    position: relative;
+}
+
+.card-table {
+    position:absolute;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 800px;
+    z-index: 1;
+
 }
