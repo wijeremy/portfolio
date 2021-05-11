@@ -25,8 +25,26 @@ header a {
 header div {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    margin-right: 1rem;
+}
+
+header .navBar {
+    width: 100%;
+    display: flex;
     justify-content: flex-end;
     margin-right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+    header .navBar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-end;
+    }    
 }
 
 .card img {
