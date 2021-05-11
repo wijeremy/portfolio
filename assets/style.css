@@ -48,6 +48,7 @@ header .navBar {
 }
 
 .card img {
+    position: relative;
     width: 200px;
     height: 200px;
     border-color: wheat;
@@ -62,6 +63,7 @@ header .navBar {
 }
 
 .card {
+    position: relative;
     background-color: #222222;
     width: 200px;
     height: 197px;
@@ -89,34 +91,48 @@ header .navBar {
 }
 
 .card a {
+    position: relative;
     width: 200px;
     height: 200px;
     z-index: 2;
 }
 
-#work-background {
-    width: 100%;
-    position: absolute;
-}
-
-#static {
-    width: 800px;
-    right: 20%;
-    position: absolute;
-    z-index: -1;
-}
 
 #work {
     position: relative;
 }
 
 .card-table {
-    position:absolute;
+    position:relative;
     padding: 2%;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     max-height: 800px;
     z-index: 1;
+}
 
+#about {
+    background-image: url(../assets/photos/chen-dairui-bBEDVL3Jzq8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 10%;
+}
+
+#about h2 {
+    font-size: 2rem;
+}
+
+#about p {
+    font-size: 1.5rem;
+    backdrop-filter: blur(2px);
+    background-color: #222222af;
+    padding: 5%;
+}
+
+#work {
+    background-image: url(../assets/photos/nathan-dumlao-cGni_Yknoic-unsplash_edited.png);
+    background-position: center;
+    background-size: cover;
 }
