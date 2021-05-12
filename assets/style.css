@@ -47,6 +47,55 @@ header .navBar {
     }    
 }
 
+#about {
+    background-image: url(../assets/photos/chen-dairui-bBEDVL3Jzq8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 10%;
+}
+
+#about h2 {
+    font-size: 2rem;
+}
+
+#about p {
+    font-size: 1.5rem;
+    backdrop-filter: blur(2px);
+    background-color: #222222af;
+    padding: 5%;
+}
+
+#work {
+    background-image: url(../assets/photos/nathan-dumlao-cGni_Yknoic-unsplash_edited.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height:800px;
+}
+
+#work h2 {
+    position: absolute;
+}
+.card {
+    position: relative;
+    background-color: #222222;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    z-index: 1;
+    transition: ease-in .25s;
+}
+
+.card:hover {
+    width: 220px;
+    height: 220px;
+    box-shadow: 10px 10px 10px #222222;
+}
+
 .card img {
     position: relative;
     width: 200px;
@@ -54,24 +103,15 @@ header .navBar {
     border-color: wheat;
     border-width: .25em;
     border-style: solid;
-    transition: opacity .5s;
+    transition: ease-in .25s;
     z-index: 1;
+    object-fit: contain;
 }
 
 .card:hover img {
     opacity: .3;
-}
-
-.card {
-    position: relative;
-    background-color: #222222;
-    width: 200px;
-    height: 197px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-    z-index: 1;
+    width: 220px;
+    height: 220px;
 }
 
 .card h3 {
@@ -97,42 +137,62 @@ header .navBar {
     z-index: 2;
 }
 
+.card input {
+}
 
-#work {
-    position: relative;
+.card label {
+    height: 200px;
+    transition: ease-in .25s;
+}
+
+.card:hover label {
+    height: 220px;
+    width: 220px;
 }
 
 .card-table {
-    position:relative;
+    position: absolute;
     padding: 2%;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     max-height: 800px;
     z-index: 1;
+    width: 25%;
 }
 
-#about {
-    background-image: url(../assets/photos/chen-dairui-bBEDVL3Jzq8-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 10%;
+.card-display {
+    position: absolute;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    z-index: -2;
+    opacity: 0;
 }
 
-#about h2 {
-    font-size: 2rem;
+#accessibility:checked #accessibilityDisp {
+    opacity: .9;
 }
 
-#about p {
-    font-size: 1.5rem;
-    backdrop-filter: blur(2px);
-    background-color: #222222af;
-    padding: 5%;
+#profile:checked #profileDisp {
+    opacity: .9;
 }
 
-#work {
-    background-image: url(../assets/photos/nathan-dumlao-cGni_Yknoic-unsplash_edited.png);
-    background-position: center;
-    background-size: cover;
+#theme:checked #themeDisp {
+    opacity: .9;
 }
+
+.static {
+    position: absolute;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    z-index: -3;
+}
+
