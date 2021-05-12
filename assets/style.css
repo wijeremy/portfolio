@@ -85,15 +85,16 @@ header .navBar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em;
+    margin: 1em 0;
     z-index: 1;
-    transition: ease-in .25s;
+    transition: ease-out .25s;
 }
 
 .card:hover {
     width: 220px;
     height: 220px;
     box-shadow: 10px 10px 10px #222222;
+    cursor: pointer;
 }
 
 .card img {
@@ -103,7 +104,7 @@ header .navBar {
     border-color: wheat;
     border-width: .25em;
     border-style: solid;
-    transition: ease-in .25s;
+    transition: ease-out .25s;
     z-index: 1;
     object-fit: contain;
 }
@@ -117,7 +118,7 @@ header .navBar {
 .card h3 {
     z-index: 1; 
     opacity: 0;
-    transition: opacity .5s;
+    transition: .5s;
     color: white;
     width: 100%;
     text-align: center;
@@ -130,26 +131,6 @@ header .navBar {
     opacity: 1;
 }
 
-.card a {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    z-index: 2;
-}
-
-.card input {
-}
-
-.card label {
-    height: 200px;
-    transition: ease-in .25s;
-}
-
-.card:hover label {
-    height: 220px;
-    width: 220px;
-}
-
 .card-table {
     position: absolute;
     padding: 2%;
@@ -158,41 +139,73 @@ header .navBar {
     overflow-y: auto;
     max-height: 800px;
     z-index: 1;
-    width: 25%;
+    width: 22%;
+}
+
+#display-container {
+    z-index: -5;
+}
+
+#link-container {
+    z-index: 5;
+}
+
+.container {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
 }
 
 .card-display {
     position: absolute;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 100px;
-    z-index: -2;
-    opacity: 0;
-}
-
-#accessibility:checked #accessibilityDisp {
+    width: 100%;
+    z-index: -3;
     opacity: .9;
-}
-
-#profile:checked #profileDisp {
-    opacity: .9;
-}
-
-#theme:checked #themeDisp {
-    opacity: .9;
+    display: none;
 }
 
 .static {
     position: absolute;
-    width: 500px;
+    width: 100%;
     margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 100px;
-    z-index: -3;
+    z-index: -4;
 }
+
+.container a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.container a i::before {
+    position: absolute;
+    color: #49fb35;
+    top: 0px;
+    left: 0px;
+    font-size: 80px;
+    width: 20%;
+    margin: auto;
+    top: 40%;
+    right: 0;
+    left: 0;
+}
+
+#accessibilityDisp {
+    display: flex;
+}
+
+#accessibilityLink {
+    display: flex;
+}
+
+
 

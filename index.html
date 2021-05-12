@@ -31,49 +31,47 @@
     <section id="work">
         <h2>Work</h2>
         <div class="card-table">
-            <div class="card">
+            <div class="card" id="accessibility">
                 <!-- <a href="https://wijeremy.github.io/horiseonAccessibility/"></a> -->
-                <input type="radio" name="myRadio" class="myRadio" id="accessibility" value="accessibility">
-                <label for="accessibility">
-                    <img src="./assets/photos/horiseon.png" alt="site description">
-                </label>
+                <img src="./assets/photos/horiseon.png" alt="site description">
                 <h3>Accessibility Excercise</h3>
             </div>    
-            <div class="card">
+            <div class="card" id="profile">
                 <!-- <a href="https://wijeremy.github.io/prework-about-me/"></a> -->
-                <input type="radio" name="myRadio" class="myRadio" id="profile" value="profile">
-                <label for="profile">
-                    <img src="./assets/photos/prework.png" alt="site description">
-                </label>
+                <img src="./assets/photos/prework.png" alt="site description">
                 <h3>My First Profile</h3>
             </div>    
-            <div class="card">
+            <div class="card" id="theme">
                 <!-- <a href="https://wijeremy.github.io/theme-button/"></a> -->
-                <input type="radio" name="myRadio" class="myRadio" id="theme" value="theme">
-                <label for="theme">
-                    <img src="./assets/photos/theme-button.png" alt="site description">
-                </label>
+                <img src="./assets/photos/theme-button.png" alt="site description">
                 <h3>Theme Button</h3>
             </div>    
-            <div class="card">
+            <div class="card" id="coming">
                 <!-- <a href="https://github.com/wijeremy"></a> -->
-                <input type="radio" name="myRadio" class="myRadio" id="coming" value="coming">
-                <label for="coming">
-                    <img src="https://picsum.photos/200/200" alt="a picture">
-                </label>
+                <img src="https://picsum.photos/200/200" alt="a picture">
                 <h3>Coming Soon</h3>
             </div>    
         </div>
-        <img id="accessibilityDisp" class="card-display" src="./assets/photos/horiseon.png" alt="site description">
-        <img id="profileDisp" class="card-display" src="./assets/photos/prework.png" alt="site description">
-        <img id="themeDisp" class="card-display" src="./assets/photos/theme-button.png" alt="site description">
-        <img id="comingDisp" class="card-display" src="https://picsum.photos/200/200" alt="a picture">  
-        <img class="static" src="./assets/photos/static.gif" alt="">         
+        <div id="display-container" class="container">
+            <img id="accessibilityDisp" class="card-display" src="./assets/photos/horiseon.png" alt="site description">
+            <img id="profileDisp" class="card-display" src="./assets/photos/prework.png" alt="site description">
+            <img id="themeDisp" class="card-display" src="./assets/photos/theme-button.png" alt="site description">
+            <img id="comingDisp" class="card-display" src="https://picsum.photos/200/200" alt="a picture">  
+            <img class="static" src="./assets/photos/static.gif" alt="">         
+        </div> 
+        <div id="link-container" class="container">
+            <a id="accessibilityLink" href="https://wijeremy.github.io/horiseonAccessibility/"><i class="far fa-play-circle"></i></a>
+            <a id="profileLink" href="https://wijeremy.github.io/prework-about-me/"><i class="far fa-play-circle"></i></a>
+            <a id="themeLink" href="https://wijeremy.github.io/theme-button/"><i class="far fa-play-circle"></i></a>
+            <a id="comingLink" href="https://github.com/wijeremy"><i class="far fa-play-circle"></i></a>
+        </div>   
     </section>
     <!-- <section id="contact">
         <h2>Contact</h2>
         <a href="https://github.com/wijeremy">View My Github</a>
         <a href="mailto: jeremydavwilliams@gmail.com">Send Me an Email</a>
     </section> -->
+<script src="./assets/javascript.js"></script>
+<script src="https://kit.fontawesome.com/68fdf69587.js" crossorigin="anonymous"></script>     
 </body>
 </html>
