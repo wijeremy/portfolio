@@ -1,3 +1,4 @@
+// When you click the Horiseon card, the image of the site comes up as well as its link, while turning off all other images and links.
 document.getElementById('accessibility').addEventListener('click', function () {
     document.getElementById('accessibilityDisp').style.display="flex";
     document.getElementById('themeDisp').style.display="none";
@@ -8,7 +9,7 @@ document.getElementById('accessibility').addEventListener('click', function () {
     document.getElementById('profileLink').style.display="none";
     document.getElementById('comingLink').style.display="none";
 }); 
-
+// This does the same thing for the theme site.
 document.getElementById('theme').addEventListener('click', function () {
     document.getElementById('accessibilityDisp').style.display="none";
     document.getElementById('themeDisp').style.display="flex";
@@ -19,7 +20,7 @@ document.getElementById('theme').addEventListener('click', function () {
     document.getElementById('profileLink').style.display="none";
     document.getElementById('comingLink').style.display="none";
 }); 
-
+// This does the same thing for my prework site.
 document.getElementById('profile').addEventListener('click', function () {
     document.getElementById('accessibilityDisp').style.display="none";
     document.getElementById('themeDisp').style.display="none";
@@ -30,7 +31,7 @@ document.getElementById('profile').addEventListener('click', function () {
     document.getElementById('profileLink').style.display="flex";
     document.getElementById('comingLink').style.display="none";
 }); 
-
+// This does the same thing for a place holder image, and the link takes you to my github acct.
 document.getElementById('coming').addEventListener('click', function () {
     document.getElementById('accessibilityDisp').style.display="none";
     document.getElementById('themeDisp').style.display="none";

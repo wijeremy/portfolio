@@ -294,22 +294,70 @@ header .navBar {
 #contact {
     background-color: darkslategray;
     padding: 2rem 5%;
-    font-size: 8rem;
     color: white;
+    text-align: center;
+    transition: .5s;
 }
 
 #contact div {
     border-style: solid;
     border-color: rgb(23, 39, 39);
-    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 #contactTitle {
-    padding: 5rem;
-    height: 10rem;
+    padding: 1rem;
     width: 80%;
-    border-style: solid;
-    border-right:rgb(23, 39, 39);
-
+    border-right:rgb(23, 39, 39) solid;
+    font-size: 15vw;
+    transition: .5s;
 }
 
+#github {
+    color: white;
+    font-size: 5vw;
+    border-right:rgb(23, 39, 39) solid;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    padding: 1rem;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#email {
+    color: white;
+    font-size: 5vw;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    padding: 1rem;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#github:hover {
+    writing-mode: horizontal-tb;
+    font-size: 15vw;
+    width: 80%;
+}
+
+#github:hover ~ #contactTitle {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 5vw;
+    width: 15%;
+}
+
+#email:hover {
+    writing-mode: horizontal-tb;
+    font-size: 15vw;
+    width: 80%;
+}
+
+#email:hover ~ #contactTitle {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 5vw;
+    width: 15%; 
+}
