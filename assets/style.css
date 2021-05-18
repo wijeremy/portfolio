@@ -282,13 +282,14 @@ header .navBar {
     left: 0;
 }
 
-#accessibilityDisp {
+#passwordDisp {
     display: flex;
 }
 
-#accessibilityLink {
+#passwordLink {
     display: flex;
 }
+
 /*END WORK*/
 /*BEGIN CONTACT*/
 #contact {
